@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 27: expected statement.
+    playername = playername.strip()
+               ^
+
+File "game/script.rpy", line 30: expected statement.
+    playername = "Yuukou Mika"
+               ^
+
+Ren'Py Version: Ren'Py 7.2.2.491
+Fri Jun 14 18:50:08 2019

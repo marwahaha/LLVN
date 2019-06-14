@@ -1,26 +1,35 @@
-﻿# The script of the game goes in this file.
+﻿# Sprites
+image arisa1 = im.Scale("images/sprites/arisa_01_01.png", 720, 720)
+image arisa2 = im.Scale("images/sprites/arisa_01_02.png", 720, 720)
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
+# Characters
+# Main
 define p = Character("[playername]")
+define Honoka = Character("Honoka Kosaka")
+define Eli = Character("Eli Ayase")
+define Kotori = Character("Kotori Minami")
+define Umi = Character("Umi Sonoda")
+define Maki = Character("Maki Nishikino")
+define Nozomi = Character("Nozomi Tojo")
+define Nico = Character("Nico Yazawa")
+define Hanayo = Character("Hanayo Koizumi")
+define Rin = Character("Rin Hoshizora")
 
+# Secondary
+define Arisa = Character("Arisa Ayase")
 
-# The game starts here.
+# Prologue
 
+# Introduction
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # Start in the house of your grandparents.
 
     scene house
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    # This sprite is for testing.
 
-    show arisa_01_04
+    show arisa1
     
     # Ask protagonist name.
     python:
@@ -30,12 +39,14 @@ label start:
         if not playername:
              playername = "Yuukou Mika"
 
-    # These display lines of dialogue.
+    # More testing
+    hide arisa1
+    show arisa2
+    Arisa "Hi [playername]"
 
-    p "You've created a new Ren'Py game."
+    Arisa "Welcome to this visual novel, this is an in development game."
+    Arisa "As you can see, there isn't anything here yet."
 
-    p "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    # Because it's still in development this is the end.
 
     return

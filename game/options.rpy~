@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("LLVN")
+define config.name = _("Love Live! The visual novel project!")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,22 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    This is a fan made visual novel. This is created by a different creator than the original one. 
+    I decided to create this because the original one was abondoned. 
+    About the game:
+    You'll help μ's save Otonokizaka High School from closure. 
+    You're transferred since the school changed to mixed gender from a girls only school.
+    
+    Info:
+    This is licensed under AGPL-v3.0 and created by {a=https://www.twitter.com/@GoldElysium/}GoldElysium{/a}. 
+    The source code can be found: {a=https://www.github.com/GoldElysium/LLVN}here{/a}
 """)
 
 
@@ -45,9 +54,9 @@ define build.name = "LLVN"
 ## These three variables control which mixers are shown to the player by
 ## default. Setting one of these to False will hide the appropriate mixer.
 
-define config.has_sound = True
-define config.has_music = True
-define config.has_voice = True
+define config.has_sound = False
+define config.has_music = False
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

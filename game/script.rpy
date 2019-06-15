@@ -4,8 +4,8 @@
 label start:
 
     # Start in the house of your grandparents.
-
-    scene house
+    stop music fadeout 1.0
+    scene house with Dissolve(0.5)
 
     # This sprite is for testing.
 

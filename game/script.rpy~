@@ -12,6 +12,7 @@ label start:
     show arisa1
     
     # Ask protagonist name.
+    "Welcome, please give your character a name. If you don't it will use 'Yuukou Mika'."
     python:
         playername = renpy.input("What is your name?")
         playername = playername.strip()

@@ -18,7 +18,7 @@ define config.name = _("Love Live! The visual novel project!")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -55,7 +55,7 @@ define build.name = "LLVN"
 ## default. Setting one of these to False will hide the appropriate mixer.
 
 define config.has_sound = False
-define config.has_music = False
+define config.has_music = True
 define config.has_voice = False
 
 
@@ -69,8 +69,12 @@ define config.has_voice = False
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
+define menuplaylist = ['music/menu/1.flac', 'music/menu/2.flac', 'music/menu/3.flac', 'music/menu/4.flac', 'music/menu/5.flac']
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+init python:
+    renpy.random.shuffle(menuplaylist)
+
+define config.main_menu_music = menuplaylist
 
 
 ## Transitions #################################################################

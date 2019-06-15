@@ -1,4 +1,7 @@
-﻿################################################################################
+﻿## INFO
+# May change the textbutton for confirm to image on line 1167 & 1168
+
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -369,12 +372,12 @@ screen main_menu():
     if gui.show_name:
 
         vbox:
-            text "[config.name!t]":
+           text "[config.name!t]":
                 style "main_menu_title"
-
-            text "[config.version]":
+ 
+           text "[config.version]":
                 style "main_menu_version"
-
+ 
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -560,7 +563,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("\n\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].]")
+            text _("\n\n\nMade with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].")
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -1160,9 +1163,11 @@ screen confirm(message, yes_action, no_action):
             hbox:
                 xalign 0.5
                 spacing 100
-
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                
+                imagebutton auto "gui/button/yes_%s.png" action yes_action
+                imagebutton auto "gui/button/no_%s.png" action no_action
+                #textbutton _("Yes") action yes_action
+                #textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action

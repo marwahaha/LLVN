@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/characters.rpy", line 8: expected statement.
-    = "images/sprites/"
+File "game/screens.rpy", line 1168: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation.
+    imagebutton auto "gui/buttons/no_%s.png" action no_action
     ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Jun 15 11:32:22 2019
+Sat Jun 15 18:02:24 2019

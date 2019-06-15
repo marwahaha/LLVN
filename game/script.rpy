@@ -1,24 +1,4 @@
-﻿# Sprites
-image arisa1 = im.Scale("images/sprites/arisa_01_01.png", 720, 720)
-image arisa2 = im.Scale("images/sprites/arisa_01_02.png", 720, 720)
-
-# Characters
-# Main
-define p = Character("[playername]")
-define Honoka = Character("Honoka Kosaka")
-define Eli = Character("Eli Ayase")
-define Kotori = Character("Kotori Minami")
-define Umi = Character("Umi Sonoda")
-define Maki = Character("Maki Nishikino")
-define Nozomi = Character("Nozomi Tojo")
-define Nico = Character("Nico Yazawa")
-define Hanayo = Character("Hanayo Koizumi")
-define Rin = Character("Rin Hoshizora")
-
-# Secondary
-define Arisa = Character("Arisa Ayase")
-
-# Prologue
+﻿# Prologue
 
 # Introduction
 label start:
@@ -32,6 +12,7 @@ label start:
     show arisa1
     
     # Ask protagonist name.
+    "Welcome, please give your character a name. If you don't it will use 'Yuukou Mika'."
     python:
         playername = renpy.input("What is your name?")
         playername = playername.strip()

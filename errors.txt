@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/characters.rpy", line 8: expected statement.
+    = "images/sprites/"
+    ^
+
+Ren'Py Version: Ren'Py 7.2.2.491
+Sat Jun 15 11:32:22 2019

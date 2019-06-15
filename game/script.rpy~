@@ -1,26 +1,15 @@
-﻿# The script of the game goes in this file.
+﻿# Prologue
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define p = Character("[playername]")
-
-
-# The game starts here.
-
+# Introduction
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # Start in the house of your grandparents.
 
     scene house
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    # This sprite is for testing.
 
-    show arisa_01_04
+    show arisa1
     
     # Ask protagonist name.
     python:
@@ -30,12 +19,14 @@ label start:
         if not playername:
              playername = "Yuukou Mika"
 
-    # These display lines of dialogue.
+    # More testing
+    hide arisa1
+    show arisa2
+    Arisa "Hi [playername]"
 
-    p "You've created a new Ren'Py game."
+    Arisa "Welcome to this visual novel, this is an in development game."
+    Arisa "As you can see, there isn't anything here yet."
 
-    p "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    # Because it's still in development this is the end.
 
     return

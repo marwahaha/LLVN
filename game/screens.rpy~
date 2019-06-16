@@ -294,45 +294,55 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
+    hbox:
+        xalign 0
+        yalign 0.9
 
-        xpos gui.navigation_xpos
-        yalign 0.5
-
-        spacing gui.navigation_spacing
-
-        if main_menu:
-
-            textbutton _("Start") action Start()
-
-        else:
-
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
-
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
+        imagebutton auto  "gui/button/start_%s.png" action Start()
+        imagebutton auto "gui/button/load_%s.png" action ShowMenu('load')
+        imagebutton auto "gui/button/options_%s.png" action ShowMenu('preferences')
         if renpy.variant("pc"):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-            ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton auto "gui/button/about_%s.png" action ShowMenu("about")
+            imagebutton auto "gui/button/quit_%s.png" action Quit()
+    # vbox:
+        # style_prefix "navigation"
+# 
+        # xpos gui.navigation_xpos
+        # yalign 0.5
+# 
+        # spacing gui.navigation_spacing
+# 
+        # if main_menu:
+# 
+            # textbutton _("Start") action Start()
+# 
+        # else:
+# 
+            # textbutton _("History") action ShowMenu("history")
+# 
+            # textbutton _("Save") action ShowMenu("save")
+# 
+        # textbutton _("Load") action ShowMenu("load")
+# 
+        # textbutton _("Preferences") action ShowMenu("preferences")
+# 
+        # if _in_replay:
+# 
+            # textbutton _("End Replay") action EndReplay(confirm=True)
+# 
+        # elif not main_menu:
+# 
+            # textbutton _("Main Menu") action MainMenu()
+# 
+        # textbutton _("About") action ShowMenu("about")
+# 
+        # if renpy.variant("pc"):
+# 
+            # ## Help isn't necessary or relevant to mobile devices.
+            # textbutton _("Help") action ShowMenu("help")
+# 
+            # ## The quit button is banned on iOS and unnecessary on Android.
+            # textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -360,10 +370,11 @@ screen main_menu():
     style_prefix "main_menu"
 
     add gui.main_menu_background
+    add gui.early_access
 
     ## This empty frame darkens the main menu.
-    frame:
-        pass
+    #frame:
+    #    pass
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.

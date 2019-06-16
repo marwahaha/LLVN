@@ -1,16 +1,26 @@
-﻿# Prologue
+﻿image ea = "gui/early_access.png"
+# Prologue
 
 # Introduction
 label start:
-
+    # show ea
+    # if persistent.analytics is None:
+# 
+        # menu:
+            # "Welcome! This game supports analytics. Enabling it will help us make better games, and will send data to Google Analytics and the developers. Do you want to enable analytics?"
+# 
+            # "Yes.":
+                # $ persistent.analytics = True
+                # "Thank you."
+# 
+            # "No.":
+                # $ persistent.analytics = False
+                # "No problem!"
     # Start in the house of your grandparents.
     stop music fadeout 1.0
     scene house with Dissolve(0.5)
+    show ea
 
-    # This sprite is for testing.
-
-    show arisa1
-    
     # Ask protagonist name.
     "Welcome, please give your character a name. If you don't it will use 'Yuukou Mika'."
     python:
@@ -19,14 +29,6 @@ label start:
     
         if not playername:
              playername = "Yuukou Mika"
-
-    # More testing
-    hide arisa1
-    show arisa2
-    Arisa "Hi [playername]"
-
-    Arisa "Welcome to this visual novel, this is an in development game."
-    Arisa "As you can see, there isn't anything here yet."
 
     # Because it's still in development this is the end.
 

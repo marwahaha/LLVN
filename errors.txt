@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 305: u'magebutton' is not a keyword argument or valid child for the hbox statement.
-    magebutton auto "gui/help_%s.png" action ShowMenu("help")
-              ^
+File "game/screens.rpy", line 444: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Jun 16 17:40:18 2019
+Sun Jun 16 23:23:47 2019

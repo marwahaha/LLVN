@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1168: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation.
-    imagebutton auto "gui/buttons/no_%s.png" action no_action
-    ^
+File "game/screens.rpy", line 305: u'magebutton' is not a keyword argument or valid child for the hbox statement.
+    magebutton auto "gui/help_%s.png" action ShowMenu("help")
+              ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sat Jun 15 18:02:24 2019
+Sun Jun 16 17:40:18 2019

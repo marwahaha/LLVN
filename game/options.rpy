@@ -224,3 +224,6 @@ init python:
 ## by a slash.
 
 define build.itch_project = "goldelysium/llvn"
+
+## The Google Analytics ID
+define analytics.tracking_id = "UA-142187347-1"

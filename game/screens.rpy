@@ -668,7 +668,7 @@ screen file_slots(title):
 
                         add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Empty slot")):
                             style "slot_time_text"
 
                         text FileSaveName(slot):
@@ -730,6 +730,7 @@ style slot_button:
 
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
+    ypos 1.175
 
 
 ## Preferences screen ##########################################################
@@ -1525,6 +1526,7 @@ style vscrollbar:
 style slider:
     variant "small"
     ysize gui.slider_size
+    ypos -0.2
     base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/horizontal_[prefix_]thumb.png"
 

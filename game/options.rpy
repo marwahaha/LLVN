@@ -69,7 +69,7 @@ define config.has_voice = False
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
-define menuplaylist = ['music/menu/1.flac', 'music/menu/2.flac', 'music/menu/3.flac', 'music/menu/4.flac', 'music/menu/5.flac']
+define menuplaylist = ['music/menu/1.flac', 'music/menu/2.flac', 'music/menu/3.flac', 'music/menu/4.flac', 'music/menu/5.flac', 'music/menu/6.flac', 'music/menu/7.flac']
 
 init python:
     renpy.random.shuffle(menuplaylist)

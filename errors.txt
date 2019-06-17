@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 444: indentation mismatch.
+File "game/screens.rpy", line 257: expected a keyword argument, colon, or end of line.
+    image auto "gui/button/qskip_%s.png" action Skip() alternate Skip(fast=True, confirm=True) 
+               ^
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Sun Jun 16 23:23:47 2019
+Mon Jun 17 17:22:24 2019

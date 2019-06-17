@@ -1,7 +1,4 @@
-﻿## INFO
-# May change the textbutton for confirm to image on line 1167 & 1168
-
-################################################################################
+﻿################################################################################
 ## Initialization
 ################################################################################
 
@@ -236,7 +233,7 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
-
+    yalign 0.5
 
 ## Quick Menu screen ###########################################################
 ##
@@ -254,16 +251,25 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.99
 
-            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
+            textbutton _("Load") action ShowMenu('load')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Options") action ShowMenu('preferences')
+            
+            # imagebutton auto "gui/button/qhistory_%s.png" action ShowMenu('history') 
+            # imagebutton auto "gui/button/qskip_%s.png" action Skip() alternate Skip(fast=True, confirm=True) 
+            # imagebutton auto "gui/button/qauto_%s.png" action Preference("auto-forward", "toggle") 
+            # imagebutton auto "gui/button/qsave_%s.png" action ShowMenu('save') 
+            # imagebutton auto "gui/button/qload_%s.png" action ShowMenu('load') 
+            # imagebutton auto "gui/button/q_quicksave_%s.png" action QuickSave() 
+            # imagebutton auto "gui/button/q_quickload_%s.png" action QuickLoad() 
+            # imagebutton auto "gui/button/qsettings_%s.png" action ShowMenu('preferences') 
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -281,6 +287,7 @@ style quick_button:
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
+    font "gui/fonts/MagdaCleanMono.ttf"
 
 
 ################################################################################

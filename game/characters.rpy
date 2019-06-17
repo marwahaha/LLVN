@@ -513,3 +513,4 @@ define Yukiho = Character("Kosaka Yukiho")
 
 #Misc
 define unknown = Character("?????")
+define n = Character() # This is effectively the same as narrator, this is here so it's easier to read the code.

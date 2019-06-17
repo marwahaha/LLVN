@@ -30,6 +30,4 @@ label start:
         if not playername:
              playername = "Yuukou Mika"
 
-    # Because it's still in development this is the end.
-
-    return
+    jump choice1

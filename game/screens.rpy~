@@ -434,21 +434,23 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         add gui.main_menu_background
+       # add gui.early_access_right
     else:
         add gui.game_menu_background
+        #add gui.early_access_right
 
     frame:
+        add gui.early_access_right
         style "game_menu_outer_frame"
 
         hbox:
 
             ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
+           # frame:
+            #    style "game_menu_navigation_frame"
 
             frame:
                 style "game_menu_content_frame"
-
                 if scroll == "viewport":
 
                     viewport:
@@ -483,11 +485,14 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                     transclude
 
     use navigation
-
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+    hbox:
+        xalign 0.98
+        yalign 0.9
+        imagebutton auto "gui/button/return_%s.png" action Return()
+        # textbutton _("Return"):
+            # style "return_button"
+#     
+            # action Return()
 
     label title
 

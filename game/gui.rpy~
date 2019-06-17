@@ -91,7 +91,7 @@ define gui.title_text_size = 75
 define gui.main_menu_background = "gui/main_menu.png"
 define gui.game_menu_background = "gui/game_menu.png"
 define gui.early_access = "gui/early_access.png"
-
+define gui.early_access_right = "gui/early_access_right.png"
 
 ## Dialogue ####################################################################
 ##
@@ -206,8 +206,8 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1185
-define gui.choice_button_height = None
+define gui.choice_button_width = 888
+define gui.choice_button_height = 124
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
@@ -338,7 +338,7 @@ define gui.unscrollable = "hide"
 ##
 ## The history screen displays dialogue that the player has already dismissed.
 
-## The number of blocks of dialogue history Ren'Py will keep.
+## The number of blocks of dialogue history Ren'Py will keep.              
 define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at

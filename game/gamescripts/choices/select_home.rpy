@@ -1,5 +1,5 @@
-label choice1:
-    "I'm currently at my grandparents house, I was staying here for this weekend."
+label select_home:
+    n "I'm currently at my grandparents house, I was staying here for this weekend because I wanted to visit them again."
     p "I'm bored. What can I do?"
     menu:
         "What should I do?"

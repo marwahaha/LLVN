@@ -27,8 +27,12 @@ label start:
     python:
         playername = renpy.input("What is your name?")
         playername = playername.strip()
+        firstname = playername.split()[0]
+        lastname = playername.split()[1]
     
         if not playername:
-             playername = "Mika Yuukou"
+            playername = "Mika Yuukou"
+            firstname = "Mika"
+            lastname = "Yuukou"
 
     jump select_home

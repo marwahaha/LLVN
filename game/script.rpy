@@ -1,4 +1,5 @@
 ﻿image ea = "gui/early_access.png"
+default menuset = set()
 # Prologue
 
 # Introduction

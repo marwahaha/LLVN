@@ -22,7 +22,7 @@ label start:
     show ea
 
     # Ask protagonist name.
-    "Welcome, please give your character a name. If you don't it will use 'Yuukou Mika'."
+    n "Welcome, please give your character a name. If you don't it will use 'Yuukou Mika'."
     python:
         playername = renpy.input("What is your name?")
         playername = playername.strip()
@@ -30,4 +30,4 @@ label start:
         if not playername:
              playername = "Yuukou Mika"
 
-    jump choice1
+    jump select_home

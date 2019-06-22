@@ -19,4 +19,12 @@
 * Twitter banner
   - TBA
 
+**Misc:**
+* Story
+  - [Love Live! Visual Novel Project](https://vndb.org/v19962)
+  - [Anime](https://www.crunchyroll.com/love-live-school-idol-project)
+  - [Custom](http://padlet.com/goldelysium/llvn)
+
 **NOTE:** The wikipedia image is smaller than I used, I have upscaled and denoised it using [waifu2x-caffe](https://github.com/lltcggie/waifu2x-caffe).
+
+Story is only based of the links, the custom is sure to come the same way in the game, but anime and the other vn are only baselines and won't be the same as in this vn.

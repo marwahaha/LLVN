@@ -19,4 +19,4 @@
 * Twitter banner
   - TBA
 
-**NOTE:** The wikipedia image is smaller than I used, I have upscaled and denoised it using (waifu2x-caffe)[https://github.com/lltcggie/waifu2x-caffe].
+**NOTE:** The wikipedia image is smaller than I used, I have upscaled and denoised it using [waifu2x-caffe](https://github.com/lltcggie/waifu2x-caffe).

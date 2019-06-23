@@ -11,7 +11,8 @@
 * Backgrounds
   - Love Live! School Idol Festival ([download](http://kachagain.com/llsif/profile.php))
 * Sprites
-  - Love Live! School Idol Festival ([download](http://kachagain.com/llsif/story.php))
+  - Love Live! School Idol Festival - Story Sprites ([download](http://kachagain.com/llsif/story.php))
+  - Love Live! School Idol Festival - Card extracts([download](http://kachagain.com/llsif/extracts.php))
 * Character Images(VNDB)
   - [Love Live! Fandom](https://love-live.fandom.com/wiki/Main_Page)
 * Image (VNDB)

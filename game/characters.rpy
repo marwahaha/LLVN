@@ -231,7 +231,6 @@ image maki41 = "images/Sprites/Maki/maki_14_01.png"
 image maki42 = "images/Sprites/Maki/maki_16_01.png"
 image maki43 = "images/Sprites/Maki/maki_16_04.png"
 image maki44 = "images/Sprites/Maki/maki_16_06.png"
-image maki45 = "images/Sprites/Maki/maki_ge_01.png"
 ## Nico
 image nico1 = "images/Sprites/Nico/nico_01_01.png"
 image nico2 = "images/Sprites/Nico/nico_01_02.png"
@@ -408,6 +407,12 @@ image umi36 = "images/Sprites/Umi/umi_12_04.png"
 image umi37 = "images/Sprites/Umi/umi_14_01.png"
 image umi38 = "images/Sprites/Umi/umi_14_03.png"
 image umi39 = "images/Sprites/Umi/umi_16_01.png"
+## Extracts
+image honokage1 = "images/Sprites/Honoka/honoka_ge_01.png"
+image kotorige1 = "images/Sprites/Kotori/kotori_ge_01.png"
+image makige1 = "images/Sprites/Maki/maki_ge_01.png"
+image makige2 = "images/Sprites/Maki/maki_ge_02.png"
+image ringe1 = "images/Sprites/rin/rin_ge_01.png"
 
 # Secondary
 ## Anju

@@ -227,3 +227,7 @@ define build.itch_project = "goldelysium/llvn"
 
 ## The Google Analytics ID
 define analytics.tracking_id = "UA-142187347-1"
+
+## Developer options
+define config.developer = True
+define config.console = True

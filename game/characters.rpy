@@ -536,7 +536,7 @@ define Fumiko = Character("Fumiko") # No last name known
 define Hideko = Character("Hideko") # No last name known
 define Mika = Character("Mika") # No last name known
 define HonokaMom = Character("Honoka's mom") # There is no name for her
-define MakiMom = Character("Maki's mom") # There is no name for her
+define MakiMom = Character("Maki's mother") # There is no name for her
 define Tsubusa = Character("Tsubasa Kira")
 define Yukiho = Character("Yukiho Kosaka")
 

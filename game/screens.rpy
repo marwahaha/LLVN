@@ -447,7 +447,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
         #add gui.early_access_right
 
     frame:
-        add gui.early_access_right
         style "game_menu_outer_frame"
 
         hbox:

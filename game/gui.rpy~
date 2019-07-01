@@ -442,7 +442,7 @@ init python:
         gui.text_width = 1650
 
         ## Change the size and spacing of various things.
-        gui.slider_size = 54
+        gui.slider_size = 50
 
         gui.choice_button_width = 1860
 

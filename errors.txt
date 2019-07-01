@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 257: expected a keyword argument, colon, or end of line.
-    image auto "gui/button/qskip_%s.png" action Skip() alternate Skip(fast=True, confirm=True) 
-               ^
+File "game/gamescripts/choices/select_home.rpy", line 99: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        p "Thanks!'
 
 Ren'Py Version: Ren'Py 7.2.2.491
-Mon Jun 17 17:22:24 2019
+Mon Jul 01 15:46:52 2019

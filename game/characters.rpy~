@@ -505,6 +505,8 @@ image yukiho15 = "images/Sprites/Yukiho/yukiho_13_01.png"
 image yukiho16 = "images/Sprites/Yukiho/yukiho_13_03.png"
 image yukiho17 = "images/Sprites/Yukiho/yukiho_13_04.png"
 image yukiho18 = "images/Sprites/Yukiho/yukiho_13_05.png"
+## Maki's Mom
+image makismom1 = "images/Sprites/Mom Maki/makismom_ge_01.png"
 
 # Misc
 image alpaca1 = "images/Sprites/Alpaca/alpacaf_01_01.png"
@@ -512,7 +514,7 @@ image alpaca2 = "images/Sprites/Alpaca/alpacam_01_01.png"
 
 # Names
 # Main
-define p = Character("[playername]")
+define p = Character("[firstname]")
 define Honoka = Character("Honoka Kosaka")
 define Eli = Character("Eli Ayase")
 define Kotori = Character("Kotori Miname")
@@ -530,14 +532,18 @@ define Cocoa = Character("Cocoa Yazawa")
 define Cocoro = Character("Cocoro Yazawa")
 define Cotaro = Character("Cotaro Yazawa")
 define Erena = Character("Erena Todo")
-define Fumiko = Character("Fumiko")
-define Hideko = Character("Hideko")
-define Mika = Character("Mika")
-define HonokaMom = Character("Honoka's mom")
+define Fumiko = Character("Fumiko") # No last name known
+define Hideko = Character("Hideko") # No last name known
+define Mika = Character("Mika") # No last name known
+define HonokaMom = Character("Honoka's mom") # There is no name for her
+define MakiMom = Character("Maki's mom") # There is no name for her
 define Tsubusa = Character("Tsubasa Kira")
 define Yukiho = Character("Yukiho Kosaka")
 
 
 #Misc
-define unknown = Character("?????")
+define u = Character("?????")
 define n = Character() # This is effectively the same as narrator, this is here so it's easier to read the code.
+define Dad = Character("Dad")
+define Mom = Character("Mom")
+define Passerby = Character("Passerby")

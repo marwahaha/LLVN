@@ -1,6 +1,6 @@
 # Love Live! The Visual Novel Project!
 This is a fan-made visual novel by GoldElysium .
-I started creating this because I saw the original one ([here](https://vndb.org/v19962)) was abondoned. The stories will be based of the original one.
+I started creating this because I saw the original one ([here](https://vndb.org/v19962)) was abandoned. The stories will be based of the original one.
 
 My discord server: [invite](https://discord.gg/qt9QBp9)
 
